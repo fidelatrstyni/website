@@ -1,0 +1,75 @@
+#s-style .title {
+    padding: 10px;
+    font: 26px;
+    color: #FFF;
+    text-align: center;
+    background: none repeat scroll 0% 0% #007bff;
+    text-transform: uppercase;
+    border-radius: 2px 2px 0px 0px;
+    border-bottom: 4px solid darkblue;
+    text-shadow: 3px 3px darkblue;
+}
+
+
+#s-style {
+    width: 300px;
+    height: auto;
+    background-color: #007bff;
+    padding-bottom: 10px;
+    margin: 10px auto 85px auto;
+    box-shadow: 5px 5px darkblue;
+}
+
+
+#s-style p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    padding: 10px 20px 0 20px;
+    margin: 0;
+    text-shadow: 3px 3px darkblue;
+}
+
+#s-style .s-form {
+    padding: 0px 20px 10px;
+}
+
+#s-style .s-form input {
+    color: #777;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 92%;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 4px 4px darkblue;
+}
+
+#s-style .s-form input:focus {
+    outline: none;
+}
+
+#s-style .s-form .submitbutton {
+    background: #025cbd;
+    color: #fff !important;
+    border: none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 2px;
+    font-family: Acme;
+}
+
+#s-style .s-form .submitbutton:active {
+    padding-top: 11px;
+    padding-bottom: 9px;
+}
+
+#s-style .s-form .submitbutton:hover {
+    background: rgb(0, 0, 248);
+}
+
+#s-style {
+    font-family: Acme;
+    font-size: 20px;
+}

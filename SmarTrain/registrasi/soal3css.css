@@ -1,0 +1,25 @@
+body {
+    background-color: azure;
+}
+.kotak{
+	padding: 20px;
+	width: 200px;
+	color: #FFFFFF;
+	margin: 50px;
+	background: #FF4500;
+}
+.kotak-form{
+	padding: 20px;
+	width: 500px;
+	color: #FFFFFF;
+	margin: 50px;
+	/*background: #FF4500;*/
+	background-color: rgba(0,0,0,0.8);
+}
+.kotak-login{
+	padding: 20px;
+	width: 300px;
+	color: #FFFFFF;
+	margin: 50px;
+	background: #FF4500;
+}

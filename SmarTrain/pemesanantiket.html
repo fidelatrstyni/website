@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Pemesanan Tiket
+	</title>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SMART TRAIN</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/tiket.css">
+  <link rel="stylesheet" href="assets/bootstrap-4.3.1-dist/css/bootstrap.css">
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="assets/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/box-search.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/box-seacrh-dua.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/styleCaritiket.css">
+  <script type="text/javascript" src="assets/js/scriptCaritiket.js"></script>
+  <style>
+    .Benefit {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .Benefit>a {
+      display: block;
+      position: relative;
+      padding: 4px 12px;
+      line-height: 24px;
+      color: #434343 !important;
+      font-weight: 500 !important;
+      text-decoration: none !important;
+    }
+
+    .Benefit>a>img {
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+
+    .Benefit>a>svg {
+      position: absolute;
+      top: 40%;
+      right: -12px;
+    }
+
+    .row.content {
+      height: auto
+    }
+
+    .content {
+      height: 100%;
+      float: left;
+      margin-left: 100px;
+      width: 80%;
+
+    }
+
+    .modal-header,
+    h4,
+    .close {
+      background-color: #5cb85c;
+      color: white !important;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .modal-footer {
+      background-color: #f9f9f9;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body bgcolor="azure">
+	<form method="post" action="tiket.php">
+      <div class="box-header">
+        <h2>Pemesanan Tiket</h2>
+        <br><br>
+        <p style="color: black; font-size: 18px;">Masuk Ke Akun SmarTrain Anda dan Nikmati Promo Eksklusif, pesan lebih cepat, poin dan keuntungan khusus member</p>
+      </div>
+      <div class="box">
+        <h1>Data Pemesan yang dapat dihubungi</h1>
+        <br><br>
+        <p style="color: black; font-size: 18px; text-align: left; margin-left: 100px">Nama Pemesan: </p>
+        <input type="text" name="kereta" onFocus="field_focus(this, 'tabel');" onblur="field_blur(this, 'tabel');" class="tabel"
+          required style="width: 300px; height: 35px; margin-right: 300px">
+        
+        <br><br>
+        <p style="color: black; font-size: 18px; text-align: left; margin-left: 100px">No. HandPhone: </p>
+        <input type="text" name="kereta" onFocus="field_focus(this, 'tabel');" onblur="field_blur(this, 'tabel');" class="tabel"
+          required style="width: 300px; height: 35px; margin-right: 300px">
+
+        <br><br>
+         <p style="color: black; font-size: 18px; text-align: left; margin-left: 100px">Alamat Email: </p>
+        <input type="text" name="kereta" onFocus="field_focus(this, 'tabel');" onblur="field_blur(this, 'tabel');" class="tabel"
+          required style="width: 300px; height: 35px; margin-right: 300px">
+      </div>
+        <!--p style="color: black; font-size: 18px; text-align: left; margin-left: 100px">Nama Pemesan: </p>
+        <input type="text" name="kereta" onFocus="field_focus(this, 'tabel');" onblur="field_blur(this, 'tabel');" class="tabel"
+          required style="width: 300px; height: 35px; margin-right: 500px"-->
+
+    <div class="box">
+        <h1>Data Pemesan yang dapat dihubungi</h1>
+        <br><br>
+        
+        <p style="color: black; font-size: 18px; text-align: left; margin-left: 100px">Titel </p>
+        <select name="kereta" onFocus="field_focus(this, 'tabel');" onblur="field_blur(this, 'tabel');" class="tabel"
+          required style="width: 300px; height: 35px; margin-right: 300px">
+          <option value="">Tuan</option>
+          <option value="">Nyonya</option>
+          <option value="">Nona</option>
+        </select>
+        <br><br>
+        <p style="color: black; font-size: 18px; text-align: left; margin-left: 100px">Nama Penumpang: </p>
+        <input type="text" name="kereta" onFocus="field_focus(this, 'tabel');" onblur="field_blur(this, 'tabel');" class="tabel"
+          required style="width: 300px; height: 35px; margin-right: 300px">
+        
+        <br><br>
+        <p style="color: black; font-size: 18px; text-align: left; margin-left: 100px">Tanda Pengenal </p>
+        <select name="kereta" onFocus="field_focus(this, 'tabel');" onblur="field_blur(this, 'tabel');" class="tabel"
+          required style="width: 300px; height: 35px; margin-right: 300px">
+          <option value="">KTP</option>
+          <option value="">No. SIM</option>
+          <option value="">No. Induk KK</option>
+          <option value="">Kartu Pelajar</option>
+        </select>
+        <br><br>
+        <p style="color: black; font-size: 18px; text-align: left; margin-left: 100px">No. Tanda Pengenal: </p>
+        <input type="text" name="kereta" onFocus="field_focus(this, 'tabel');" onblur="field_blur(this, 'tabel');" class="tabel"
+          required style="width: 300px; height: 35px; margin-right: 300px">
+
+        <br><br>
+        <div class="box" style="margin-left: 0px">
+        	<h1 style="color: black; font-size: 35px; text-align: left; margin-left: 10px">Rincian Harga </h1>
+        </div>
+    </div>
+        <div class="boxs-right">
+        	<p style="color: black; font-size: 18px; text-align: left; margin-left: 100px">Kereta Pergi | Details </p>
+        </div>
+
+       <!-- End Box -->
+
+    </form>
+</body>
+</html>

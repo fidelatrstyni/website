@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SMART TRAIN</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/services.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/contentServices.css">
+  <link rel="stylesheet" href="assets/bootstrap-4.3.1-dist/css/bootstrap.css">
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="assets/js/accordion.js"></script>
+  <script type="text/javascript" src="assets/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    .row.content {
+      height: auto
+    }
+
+    .content {
+      height: 100%;
+      float: left;
+      margin-left: 100px;
+      width: 80%;
+
+    }
+
+    .modal-header,
+    h4,
+    .close {
+      background-color: #5cb85c;
+      color: white !important;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .modal-footer {
+      background-color: #f9f9f9;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <div class="container-css">
+      <div class="header">
+        <ul class="menu-left"></ul>
+        <ul class="pull-right-css menu">
+          <li><a href="index.html" class="class-a">HOME</a></li>
+          <li><a href="tiket.html" class="class-a">TICKET</a></li>
+          <li><a href="services.html" class="class-a">SERVICES</a></li>
+          <li><a href="aboutus.html" class="class-a">ABOUT US</a></li>
+          <div class="li-right">
+            <li id="myBtn"><a href="#myModal" class="class-a">LOGIN</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <h4 style="text-align: center"><span class="glyphicon glyphicon-lock">Login</h4></span>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="password" class="form-control" id="psw" placeholder="Enter password" required>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>
+                <font style="size: 10px">Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>
+              Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <h6><a href="#">Not a member?Sign Up</a></h6>
+          <h6><a href="#">Forgot Password?</a></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $("#myBtn").click(function () {
+        $("#myModal").modal();
+      });
+    });
+  </script>
+
+
+  <div class="slider-container">
+    <div class="slider">
+      <!-- Looping 3x -->
+      <div class="item-slider">
+        <img alt="TIKET KERETA-APIKU" title="SMART TRAIN" src="assets/img/slider26.jpg" class="responsive">
+      </div>
+
+      <div class="item-slider">
+        <img alt="TIKET KERETA-APIKU" title="SMART TRAIN" src="assets/img/slider31.jpg" class="responsive">
+      </div>
+
+      <div class="item-slider">
+        <img alt="TIKET KERETA-APIKU" title="SMART TRAIN" src="assets/img/slider30.jpg" class="responsive">
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+  <a href="tiket.html" class="btn btn-default btn-lg" style="margin-left: 350px; width: 300px;">Cari Tiket</a>
+  <a href="#" class="btn btn-default btn-lg" style="margin-right: 200px; width: 300px;">BOOKING TIKET</a>
+  <br><br><br><br>
+  <div class="container">
+    <div class="toc-tab-box">
+      <h2 class="acc-title">Cara Pemesanan Tiket Kereta Api</h2>
+      <div class="acc-content">
+        <div class="col-md-6">
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>1</span></div>
+                      </td>
+                      <td>
+                        <h4 class="">Cari kereta api Anda</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Mulai pencarian dengan mengisi kota/stasiun asal dan tujuan Anda, tanggal perjalanan, serta jumlah
+                  penumpang.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>2</span></div>
+                      </td>
+                      <td>
+                        <h4 class="classh4">Pilih dan pesan kereta Anda</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Lihat detail kereta (nama kereta, jadwal, harga, dll) di halaman hasil pencarian, lalu pilih yang
+                  sesuai untuk Anda.</p>
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>3</span></div>
+                      </td>
+                      <td>
+                        <h4 class="">Lengkapi data pemesan dan penumpang</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Isi data pemesan yang dapat dihubungi dan data penumpang yang berangkat. Pastikan data yang Anda
+                  masukkan benar.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>4</span></div>
+                      </td>
+                      <td>
+                        <h4>Lakukan pembayaran</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Pilih metode pembayaran yang sesuai dengan Anda, dan lakukan pembayaran sebelum batas waktu habis.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>5</span></div>
+                      </td>
+                      <td>
+                        <h4>Dapatkan e-tiket Anda</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Setelah pembayaran sukses diterima, e-tiket akan kami kirimkan ke alamat email Anda dalam 20 menit.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <h2 class="acc-title">Cara Pembayaran</h2>
+
+      <div class="acc-content">
+        <div class="col-md-6">
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>1</span></div>
+                      </td>
+                      <td>
+                        <h4 class="">Pilih Jenis Pembayaran</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Terdapat 5 Jenis Cara Pembayaran</p>
+                <ul>
+                  <li>Transfer BCA (ATM & Internet Banking)</li>
+                  <li>Transfer BNI (ATM & Internet Banking)</li>
+                  <li>Transfer Alfamart</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>2</span></div>
+                      </td>
+                      <td>
+                        <h4>Transfer BCA (ATM & Internet Banking)</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Cara pembayaran melalui Transfer ATM BCA
+                  <br><br>
+
+                  1. Masa aktif pembayaran adalah 45 menit setelah booking, melewati masa aktif pembayaran kode
+                  pembayaran akan expire.<br>
+                  2. Setelah masuk menu ATM BCA, pilih >> TRANSFER.<br>
+                  3. Layar selanjutnya pilih >> KE REK BCA.<br>
+                  4. Selanjutnya masukkan nominal pembayaran tiket yang diterima di email >> BENAR.<br>
+                  5. Masukkan no rekening TiketKAI: 445-1211-999 atas nama KHABIB MUKAR ROOMIIN >> BENAR.<br>
+                  6. Akan tampil detil pembayaran, bila sudah benar pilih >> BENAR.<br>
+                  7. Transaksi berhasil, Anda akan mendapatkan konfirmasi kode booking melalui email dan SMS. Tukarkan
+                  menjadi tiket resmi sebelum keberangkatan.<br>
+                  8. Pembayaran menggunakan transfer BCA hanya berlaku mulai pukul 06:01-20:59. Pukul 21:00-06:00 adalah
+                  masa cut-off bank sehingga pembayaran pada masa cut-off akan gagal dan dana akan direfund.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>1</span></div>
+                      </td>
+                      <td>
+                        <h4 class="">Transfer BNI (ATM & Internet Banking)</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>1. Masa aktif pembayaran adalah 45 menit setelah booking, melewati masa aktif pembayaran kode
+                  pembayaran akan expire. <br>
+                  2. Setelah masuk menu ATM BNI, pilih >> MENU LAIN >> TRANSFER.<br>
+                  3. Layar selanjutnya pilih >> DARI REK TABUNGAN >> KE REK BNI.<br>
+                  4. Selanjutnya masukkan nominal pembayaran tiket yang diterima di email (nominal tiket unik)<br>
+                  5. Masukkan no rekening TiketKAI: 323-3323-389 atas nama KHABIB MUKAR ROOMIIN >> BENAR.<br>
+                  6. Akan tampil detil pembayaran, bila sudah benar pilih >> BENAR.
+                  Transaksi berhasil, Anda akan mendapatkan konfirmasi kode booking melalui email dan SMS. Tukarkan
+                  menjadi tiket resmi sebelum keberangkatan.<br>
+                  7. Pembayaran menggunakan transfer BNI hanya berlaku mulai pukul 06:01-20:59. Pukul 21:00-06:00 adalah
+                  masa cut-off bank sehingga pembayaran pada masa cut-off akan gagal dan dana akan direfund.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>2</span></div>
+                      </td>
+                      <td>
+                        <h4>Transfer Alfamart</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>1. Masa aktif pembayaran adalah 45 menit setelah booking, melewati masa aktif pembayaran kode
+                  pembayaran akan expire.<br>
+                  2. Transaksi pembayaran dilakukan dengan mendatangi gerai Alfamart terdekat dan tunjukkan Kode
+                  Pembayaran (Order ID) yang didapat.<br>
+                  3. Pastikan kepada kasir Alfamart untuk melakukan pembayaran pada MERCHANT ID JADIPERGI >> Kode
+                  Pembayaran (Order ID).<br>
+                  4. Pihak Alfamart akan mengenakan biaya admin Rp 2.500 di luar total tagihan.<br>
+                  5. Struk pembayaran dan kode booking akan dikirimkan ke email Anda. Tukarkan menjadi tiket resmi
+                  sebelum keberangkatan.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <h2 class="acc-title">Cara pembatalan tiket kereta</h2>
+
+      <div class="acc-content">
+        <div class="col-md-6">
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>1</span></div>
+                      </td>
+                      <td>
+                        <h4 class="">Datangi stasiun</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Kamu harus mendatangi stasiun pembatalan tiket kereta api. Setiap proses pembatalan tiket kereta api
+                  dan cara refund tiket kereta api, semuanya hanya bisa dilakukan secara langsung lewat PT KAI.<br>
+                  <br>
+                  Daftar stasiun yang melayani pembatalan tiket kereta api, yaitu:<br>
+                  <br><br>
+                  DAOP 1 Jakarta: Stasiun Jakartakota, Stasiun Gambir, Stasiun Pasar Senen, Stasiun Bogor, Stasiun
+                  Bekasi, Stasiun Cikampek, Stasiun Serang, Stasiun Rangkasbitung.<br>
+                  <br>
+                  DAOP 2 Bandung: Stasiun Bandung, Stasiun Purwakarta, Stasiun Banjar, Stasiun Tasikmalaya, Stasiun
+                  Kiaracondong.
+                  <br><br>
+                  DAOP 3 Cirebon: Stasiun Cirebon, Stasiun Cirebon Prujakan, Stasiun Brebes, Stasiun Jatibarang.
+                  <br><br>
+                  DAOP 4 Semarang: Stasiun Tegal, Stasiun Pekalongan, Stasiun Cepu, Stasiun Semarangponcol. Stasiun
+                  Semarangtawang, Stasiun Bojonegoro.
+                  <br><br>
+                  DAOP 5 Purwokerto: Stasiun Purwokerto, Stasiun Cilacap, Stasiun Kroya, Stasiun Kutoarjo.
+                  <br><br>
+                  DAOP 6 Yogyakarta: Stasiun Yogyakarta (Stasiun Tugu), Stasiun Lempuyangan, Stasiun Solo Balapan.
+                  <br><br>
+                  DAOP 7 Madiun: Stasiun Madiun, Stasun Kediri, Stasiun Jombang, Stasiun Kertosono.
+                  <br><br>
+                  DAOP 8 Surabaya: Stasiun Surabaya Gubeng, Stasiun Surabaya Pasarturi, Stasiun Sidoarjo, Stasiun
+                  Malang, Stasiun Mojokerto, Stasiun Blitar.
+                  <br><br>
+                  DAOP 9 Jember: Stasiun Jember, Stasiun Probolinggo, Stasiun Pasuruan, Stasiun Banyuwangi Baru, Stasiun
+                  Kalibaru, Stasiun Jember, Stasiun Probolinggo, dan Stasiun Pasuruan.
+                  <br><br>
+                  DIVRE I Sumatera Utara: Stasiun Medan, Stasiun Tebingtinggi, Stasiun Siantar, Stasiun Tanjung Balai,
+                  Stasiun Kisaran Ranntauprapat.
+                  <br><br>
+                  DIVRE II Sumatera Barat: Stasiun Padang
+                  <br><br>
+                  DIVRE III Sumatera Selatan: Stasiun Prabumulih, Stasiun Kertapati, Stasiun Lubuklinggau, Stasiun
+                  Baturaja, Stasiun Tanjungkarang, dan Stasiun Kotabumi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>2</span></div>
+                      </td>
+                      <td>
+                        <h4>Isi formulir</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Datangi bagian customer service di stasiun yang melayani pembatalan tiket kereta di atas yang dekat
+                  dengan tempat tinggalmu. Customer Service akan berikan formulir pembatalan tiket kereta api &
+                  diarahkan ke loket khusus untuk mengajukan pembatalan tiket kereta api. Jangan malu buat bertanya dulu
+                  pada Customer Service di stasiun pembatalan tiket kereta api agar syarat pembatalan tiket kereta apimu
+                  lengkap.
+                  <br><br>
+                  Lengkapi data penumpang dengan mengisi formulir pembatalan tiket kereta api. Formulir pembatalan tiket
+                  kereta api ini terdiri dari dua rangkap formulir, yang satu adalah data tiket, sedangkan yang rangkap
+                  satunya adalah data penumpang. Formulir ini adalah syarat pembatalan tiket kereta api yang harus kamu
+                  isi secara lengkap.<br><br>
+
+                  1. Masukkan nama lengkap, alamat dan no telepon.<br>
+                  2. Pilih pembatalan tiket atau ganti jadwal<br>
+                  3. Tulis kode booking yang dibeli di TiketKAI<br>
+                  4. Bila kamu ganti jadwal, isi nama KA, asal stasiun, tujuan, pilih kelas kereta, masukkan tanggal dan
+                  jam baru.<br>
+                  5. Pilih cara pembayaran refund tiket, transfer rekening atau ambil langsung di stasiun beserta
+                  tanggal pengembalian.<br>
+                  6. Jumlah bea pengembalian akan diisi oleh petugas<br>
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>3</span></div>
+                      </td>
+                      <td>
+                        <h4 class="">Refund tiket</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Bila kamu memilih refund tiket kereta dengan cara ditransfer ke rekening, maka dana refund akan
+                  ditransfer 30 hari setelah pembatalan tiket (30×24 jam).<br><br>
+
+                  Bila kamu memilih pengembalian tiket kereta secara tunai, kamu dapat mengambil di stasiun yang telah
+                  ditentukan dengan membawa formulir yang telah divalidasi dan membawa bukti identitas.<br><br>
+
+                  Bila formulir pembatalan kereta api hilang, kamu harus menyertakan surat kehilangan dari
+                  kepolisian.<br><br>
+
+                  Ingat ya, dana refund yang diterima dikurangi 25%, jadi pengembalian senilai 75% dari harga tiket
+                  (diluar admin pembelian)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+  <h1 style="margin-left: 450px;">Pembayaran Dapat Melalui: </h1>
+  <img alt="TIKET KERETA-APIKU" title="Payment" src="assets/img/paymentlogo.png" class="responsive"
+    style="margin-left: 200px; width: 1000px; height: 400px">
+  <br><br><br><br>
+
+
+  <div class="clear"></div>
+  <div class="footer">
+    <div class="row">
+      <div class="col-md-4">
+        <h2 style="margin-right: 0px; color:deepskyblue">Hubungi Kami:</h2>
+        <p style="text-align: justify; margin-left: 120px; color:white">08113-222989 (Hunting)</p>
+        <p style="text-align: justify; margin-left: 120px; color:white">support@smarttrain.com</p>
+      </div>
+      <div class="col-md-4">
+        <h2 style="margin-right: 0px; color:#FF7F50">Partner Pembayaran :</h2>
+        <img alt="TIKET KERETA-APIKU" title="Payment" src="assets/img/partner-pembayaran.png" class="responsive"
+          style="margin-left: 50px; width: 500px; height: 200px">
+      </div>
+      <div class="col-md-4">
+        <h2 style="margin-right: 0px; color:#FF7F50;">Lokasi Kami: </h2>
+        <p style="text-align: justify; margin-left: 120px; color:white">PT. SMART TRAIN KENCANA<br>
+          Jl. Delta Raya Utara Kav. 49-51 Deltasari Baru, Waru Sidoarjo, Jawa Timur</p>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <br><br>
+          <p style="margin-left: 450px; font-size: 20px;color:white;">&copy;Copyright SMART TRAIN 2019 Allright
+            Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/accordion.js"></script>
+
+</body>
+
+</html>

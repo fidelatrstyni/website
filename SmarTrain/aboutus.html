@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEPURTRAIN</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/contentServices.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="assets/js/accordion.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="assets/bootstrap-4.3.1-dist/css/bootstrap.css">
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="assets/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    .row.content {
+      height: auto
+    }
+
+    .content {
+      height: 100%;
+      float: left;
+      margin-left: 100px;
+      width: 80%;
+
+    }
+
+    .modal-header,
+    .close {
+      background-color: #5cb85c;
+      color: white !important;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .h4class,
+    .close {
+      background-color: #5cb85c;
+      color: white !important;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    /*.classh4{
+      /*background-color: deepskyblue;
+      color: deepskyblue !important;
+      text-align: center;
+      font-size: 30px;
+    }*/
+
+    .modal-footer {
+      background-color: #f9f9f9;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body style="background-color: azure">
+  <div class="container-css">
+    <div class="header" style="background-image: linear-gradient(#013440, #025059)">
+      <ul class="pull-left">
+        <li class="logo" class="li-left" style="margin-top: 30px;"><a href="index.html" class="class-a"
+            style="margin-top: 100px;">
+            <!--img
+                alt="smarttrain" title="smarttrain" src="assets/img/logo.png"-->SEPURTRAIN</a></li>
+      </ul>
+      <ul class="pull-left">
+        <!--li class="logo" class="li-left" style="margin-bottom: 5px;"><a href="index.html" class="class-a"><img alt="smarttrain" title="smarttrain" src="assets/img/logo.png"></a></li-->
+      </ul>
+      <ul class="pull-right-css menu">
+        <li style="margin-top: 10px;"><a href="index.html" class="class-a">HOME</a></li>
+        <li style="margin-top: 10px;"><a href="tiket.html" class="class-a">TICKET</a></li>
+        <li style="margin-top: 10px;"><a href="services.html" class="class-a">SERVICES</a></li>
+        <li style="margin-top: 10px;"><a href="aboutus.html" class="class-a">ABOUT US</a></li>
+        <div class="li-right">
+          <li id="myBtn" style="margin-bottom: 40px;"><a href="#contact" class="class-a">LOGIN</a></li>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <!--div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content>
+                         <div class="modal-content">
+                            <div class="modal-header" style="padding:35px 50px;">
+                                <h4 style="text-align: center"><span class="glyphicon glyphicon-lock">Login</h4></span>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                
+                            </div>
+                            <div class="modal-body" style="padding:40px 50px;">
+                              <form role="form">
+                                <div class="form-group">
+                                  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                                  <input type="text" class="form-control" id="usrname" placeholder="Enter email" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                                  <input type="password" class="form-control" id="psw" placeholder="Enter password" required>
+                                </div>
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="" checked><font style="size: 10px">Remember me</label>
+                                </div>
+                                  <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                              </form>
+                            </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                                <span class="glyphicon glyphicon-remove"></span> Cancel
+                            </button>
+                            <h6><a href="#">Not a member?Sign Up</a></h6>
+                            <h6><a href="#">Forgot Password?</a></h6>
+                        </div>
+                    </div>
+                    </div>
+                </div-->
+  <!--div class="slider-container">
+      <div class="slider">
+        <!-- Looping 3x>
+        <div class="item-slider">
+          <img alt="TIKET KERETA-APIKU" title="SMART TRAIN" src="assets/img/slider26.jpg" class="responsive">
+        </div>
+
+        <div class="item-slider">
+          <img alt="TIKET KERETA-APIKU" title="SMART TRAIN" src="assets/img/slider31.jpg" class="responsive">
+        </div>
+
+        <div class="item-slider">
+          <img alt="TIKET KERETA-APIKU" title="SMART TRAIN" src="assets/img/slider30.jpg" class="responsive">
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <a href="#" class="btn btn-default btn-lg" style="margin-left: 350px; width: 300px;">Cari Tiket</a> 
+    <a href="#" class="btn btn-default btn-lg" style="margin-right: 200px; width: 300px;">BOOKING TIKET</a-->
+  <br><br><br><br>
+  <div class="container-css">
+    <!--div class="header"-->
+    <img alt="TIKET KERETA-APIKU" title="Payment" src="assets/img/slider25.jpg" class="responsive"
+      style="margin-left:0px; width: 300%; height: 500px" />
+    <!--/div-->
+  </div>
+  <br><br><br><br>
+  <a href="tiket.html" class="btn btn-default btn-lg"
+    style="margin-left: 350px; width: 300px; height: 50px; font-size: 20px; background-color: chocolate; color: white">Cari
+    Tiket</a>
+  <a href="tiket.html" class="btn btn-default btn-lg"
+    style="margin-left: 50px; width: 300px; height: 50px; font-size: 20px; background-color: chocolate; color: white">BOOKING
+    TIKET</a>
+  <br><br><br><br>
+  <div class="container">
+    <div class="toc-tab-box">
+      <h2 class="acc-title">Profil SmarTrain</h2>
+      <div class="acc-content">
+        <div class="col-md-6">
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>1</span></div>
+                      </td>
+                      <td>
+                        <h4 class="">SmarTrain adalah...​</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Layanan pembelian tiket kereta api online melalui www.smartrain.com dan aplikasi SmarTrain Mobile.
+                  Beli tiket kereta jadi cepat, nyaman dan mudah serta pasti untung. Berdiri sejak Juni 2012 telah
+                  melayani ratusan juta pengguna kereta api di Indonesia</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>2</span></div>
+                      </td>
+                      <td>
+                        <h4 class="classh4">Perusahaan FindelTech</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>SmarTrain.com dikelola oleh PT Findel Technologi, perusahaan berbasis IT dan FindelTech dengan
+                  berbagai lisensi penyelenggaraan FindelTech di Indonesia dan tergabung dalam keanggotaan Indonesian
+                  FindelTech Association, idEA, ASPI, ADEI, Asia Pacific MSME Trande Coalition, Asosiasi Penyelenggara
+                  Pengiriman Uang Indonesia, dll</p>
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>3</span></div>
+                      </td>
+                      <td>
+                        <h4 class="">Keamanan</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>SmarTrain didukung oleh keamanan enkripsi dan berstandar ISO ISO 27001 – Information Security
+                  Management tentang Manajemen Keamanan Informasi. SmarTrain menjamin kerahasiaan informasi Anda dari
+                  penyalahgunaan informasi oleh pihak-pihak yang tidak bertanggungjawab.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>4</span></div>
+                      </td>
+                      <td>
+                        <h4>Lakukan pembayaran</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Pilih metode pembayaran yang sesuai dengan Anda, dan lakukan pembayaran sebelum batas waktu habis.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>5</span></div>
+                      </td>
+                      <td>
+                        <h4>Pembayaran</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Sistem pembayaran di SmarTrain menggunakan infrastruktur dan ijin uang elektronik (e-money) SpeedCash
+                  milik PT Findel Technologi yang telah memiliki izin operasional dari Bank Indonesia No.
+                  19/467/DKSP/Srt/B tanggal 23 Mei 2017.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <h2 class="acc-title">Mengapa pakai SmarTrain</h2>
+
+      <div class="acc-content">
+        <div class="col-md-6">
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>1</span></div>
+                      </td>
+                      <td>
+                        <h4 class="">GAK PERLU ANTRI</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Tidak perlu antri beli tiket di stasiun, bisa dilakukan di rumah atau dimana saja.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>2</span></div>
+                      </td>
+                      <td>
+                        <h4>RESERVASI MUDAH</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Beli tiket pakai HP, laptop atau gadget kapanpun dimanapun.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>3</span></div>
+                      </td>
+                      <td>
+                        <h4 class="">BAYAR MUDAH & CEPAT</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Bayar tiket kereta melalui ATM, internet banking, 137 bank, kartu kredit, minimarket
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>4</span></div>
+                      </td>
+                      <td>
+                        <h4>PINDAH GERBONG & KURSI</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Bisa pindah gerbong dan pilih kursi sesuai keinginan.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+
+            <div class="quest">
+              <div class="accordionItemHeading">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="circle"><span>5</span></div>
+                      </td>
+                      <td>
+                        <h4>HEMAT WAKTU & BIAYA</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="answer" style="display: none;">
+                <p>Proses cepat, ada diskon tiket kereta, simpan rute favorit untuk reservasi cepat.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+  <div class="clear"></div>
+  <div class="footer">
+    <div class="row">
+      <div class="col-md-4">
+        <h2 style="margin-right: 0px; color:deepskyblue">Hubungi Kami:</h2>
+        <p style="text-align: justify; margin-left: 120px; font-size: 15px; color: white">08113-222989 (Hunting)</p>
+        <p style="text-align: justify; margin-left: 120px; font-size: 15px; color: white">support@sepurtrain.com</p>
+      </div>
+      <div class="col-md-4">
+        <h2 style="margin-right: 0px; color:#FF7F50">Partner Pembayaran :</h2>
+        <img alt="TIKET KERETA-APIKU" title="Payment" src="assets/img/partner-pembayaran.png" class="responsive"
+          style="margin-left: 50px; width: 500px; height: 200px">
+      </div>
+      <div class="col-md-4">
+        <h2 style="margin-right: 0px; color:red;">Lokasi Kami: </h2>
+        <p style="text-align: justify; margin-left: 120px; font-size: 15px; color: white">PT. SMART TRAIN KENCANA<br>
+          Jl. Delta Raya Utara Kav. 49-51 Deltasari Baru, Waru Sidoarjo, Jawa Timur</p>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <br><br>
+          <p style="margin-left: 450px; font-size: 20px;color:white;">&copy;Copyright SEPURTRAIN 2019
+            Allright
+            Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $("#myBtn").click(function () {
+        $("#myModal").modal();
+      });
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/accordion.js"></script>
+</body>
+
+</html>

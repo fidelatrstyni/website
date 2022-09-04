@@ -1,0 +1,46 @@
+.table-tiket {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-tiket th {
+    background: #3498db;
+    color: #FFFFFF;
+    padding: 1em;
+    text-align: left;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.table-tiket td {
+    border-bottom: 1px solid #DDDDDD;
+    color: #666666;
+    padding: 1em;
+    text-align: center;
+}
+
+.button-flat-outline {
+    border: 2px solid #3498db;
+    /* border: tebal[px] tipe[solid,dashed,dotted] warna[#hex, rgb()]; */
+    background: transparent;
+    /* set warna background menjadi transparan */
+    color: #3498db;
+    /* ubah warna font */
+    font-size: 16px;
+    /* ubah ukuran font */
+    padding: 0.5em 1em 0.5em 1em;
+    /* padding: top right bottom left; */
+}
+
+.button-flat-outline:hover {
+    opacity: 0.8;
+    /* ubah tingkat transparansi saat cursor menuju button. 0.0 s.d 1.0 */
+}
+
+.button-flat-outline:active {
+    background: #216b9c;
+    /* ubah background saat button ditekan */
+    color: #FFFFFF;
+    /* set warna font menjadi putih */
+}
