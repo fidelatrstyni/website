@@ -1,0 +1,12 @@
+CRITICAL - 2022-01-27 23:05:08 --> Class 'App\Models\M_Makanan' not found
+#0 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(802): App\Controllers\Dashboard->__construct()
+#1 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-27 23:05:12 --> Class 'App\Models\M_Makanan' not found
+#0 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(802): App\Controllers\Dashboard->__construct()
+#1 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

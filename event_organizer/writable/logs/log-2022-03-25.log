@@ -1,0 +1,13 @@
+CRITICAL - 2022-03-25 04:49:35 --> Invalid file: layout/v_headerauth.php
+#0 C:\xampp\htdocs\event_organizer\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/v_header...')
+#1 C:\xampp\htdocs\event_organizer\system\Common.php(1089): CodeIgniter\View\View->render('layout/v_header...', Array, true)
+#2 C:\xampp\htdocs\event_organizer\app\Views\auth\v_wrapperauth.php(2): view('layout/v_header...')
+#3 C:\xampp\htdocs\event_organizer\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\event_organizer\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\event_organizer\system\Common.php(1089): CodeIgniter\View\View->render('auth/v_wrappera...', Array, true)
+#6 C:\xampp\htdocs\event_organizer\app\Controllers\Login.php(22): view('auth/v_wrappera...', Array)
+#7 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#8 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

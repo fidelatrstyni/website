@@ -1,0 +1,87 @@
+ERROR - 2022-05-28 05:27:53 --> Table 'db_event.users' doesn't exist
+CRITICAL - 2022-05-28 05:27:53 --> Table 'db_event.users' doesn't exist
+#0 C:\xampp\htdocs\event_organizer\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\event_organizer\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\event_organizer\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('direktur@gmail....', 'email', Array, NULL)
+#6 C:\xampp\htdocs\event_organizer\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'direktur@gmail....', Array, Array)
+#7 C:\xampp\htdocs\event_organizer\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\event_organizer\app\Controllers\Register.php(38): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Register->save()
+#10 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-05-28 05:29:19 --> Table 'db_event.users' doesn't exist
+CRITICAL - 2022-05-28 05:29:19 --> Table 'db_event.users' doesn't exist
+#0 C:\xampp\htdocs\event_organizer\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\event_organizer\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\event_organizer\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('direktur@gmail....', 'email', Array, NULL)
+#6 C:\xampp\htdocs\event_organizer\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'direktur@gmail....', Array, Array)
+#7 C:\xampp\htdocs\event_organizer\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\event_organizer\app\Controllers\Register.php(38): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Register->save()
+#10 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-05-28 05:30:32 --> Table 'db_event.users' doesn't exist
+CRITICAL - 2022-05-28 05:30:32 --> Table 'db_event.users' doesn't exist
+#0 C:\xampp\htdocs\event_organizer\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\event_organizer\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\event_organizer\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('direktur@gmail....', 'email', Array, NULL)
+#6 C:\xampp\htdocs\event_organizer\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'direktur@gmail....', Array, Array)
+#7 C:\xampp\htdocs\event_organizer\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\event_organizer\app\Controllers\Register.php(38): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Register->save()
+#10 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-05-28 05:33:17 --> Table 'db_event.users' doesn't exist
+CRITICAL - 2022-05-28 05:33:17 --> Table 'db_event.users' doesn't exist
+#0 C:\xampp\htdocs\event_organizer\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\event_organizer\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\event_organizer\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('direktur@gmail....', 'email', Array, NULL)
+#6 C:\xampp\htdocs\event_organizer\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'direktur@gmail....', Array, Array)
+#7 C:\xampp\htdocs\event_organizer\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\event_organizer\app\Controllers\Register.php(38): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Register->save()
+#10 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-05-28 05:34:58 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2022-05-28 05:34:58 --> Unknown column 'email' in 'where clause'
+#0 C:\xampp\htdocs\event_organizer\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\event_organizer\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\event_organizer\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('direktur@gmail....', 'email', Array, NULL)
+#6 C:\xampp\htdocs\event_organizer\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'direktur@gmail....', Array, Array)
+#7 C:\xampp\htdocs\event_organizer\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\event_organizer\app\Controllers\Register.php(38): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Register->save()
+#10 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-28 05:50:16 --> Undefined index: id
+#0 C:\xampp\htdocs\event_organizer\app\Controllers\Login.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Login->auth()
+#2 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

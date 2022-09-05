@@ -1,0 +1,707 @@
+CRITICAL - 2022-04-24 07:32:12 --> unlink(C:\xampp\htdocs\event_organizer\writable\debugbar/debugbar_1648210647.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\event_organizer\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1650803526, 20)
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\event_organizer\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\event_organizer\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:24:59 --> Undefined property: App\Controllers\Event::$M_Kategori
+#0 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#2 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#3 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 08:26:27 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#1 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#2 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#3 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 08:27:46 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#1 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#2 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#3 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 08:27:50 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#1 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#2 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#3 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-24 08:29:12 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:29:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:29:12 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:29:44 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:29:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:29:44 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:30:41 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:30:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:30:41 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:31:44 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:31:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:31:44 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:31:55 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:31:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:31:55 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:32:00 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:32:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:32:00 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:32:26 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:32:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:32:26 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:33:27 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:33:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:33:27 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:34:25 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:34:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:34:25 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:42:48 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:42:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:42:48 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:42:55 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:42:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:42:55 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-24 08:43:54 --> Undefined property: CodeIgniter\Database\MySQLi\Builder::$get
+#0 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#2 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#3 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 08:44:23 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:44:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:44:23 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:45:36 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:45:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:45:36 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:45:40 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:45:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:45:40 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:51:44 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:51:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:51:44 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:54:07 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:54:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:54:07 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:55:02 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:55:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:55:02 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:55:06 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:55:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:55:06 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:56:37 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:56:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\E.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\E->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\E))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:56:37 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\E), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:56:39 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:56:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\E.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\E->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\E))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:56:39 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\E), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:58:18 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:58:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(23): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:58:18 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Event), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:58:19 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:58:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Home.php(22): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:58:19 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:58:21 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:58:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Home.php(22): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:58:21 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:59:43 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:59:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Home.php(22): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:59:43 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:59:45 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:59:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Home.php(22): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:59:45 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-24 08:59:45 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-04-24 08:59:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\event_organizer\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\event_organizer\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\event_organizer\app\Models\M_Kategori.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\event_organizer\app\Controllers\Home.php(22): App\Models\M_Kategori->getAll()
+#4 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 08:59:45 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\event_organizer\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(234): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\event_organizer\system\Debug\Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-24 09:09:31 --> Undefined variable: value
+#0 C:\xampp\htdocs\event_organizer\app\Views\v_event.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\event_organizer\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\event_organizer\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\event_organizer\system\Common.php(1089): CodeIgniter\View\View->render('v_event', Array, true)
+#4 C:\xampp\htdocs\event_organizer\app\Views\layout\v_content.php(3): view('v_event')
+#5 C:\xampp\htdocs\event_organizer\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\event_organizer\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\event_organizer\system\Common.php(1089): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 C:\xampp\htdocs\event_organizer\app\Views\layout\v_wrapper.php(4): view('layout/v_conten...')
+#9 C:\xampp\htdocs\event_organizer\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\event_organizer\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\event_organizer\system\Common.php(1089): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(26): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#14 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#15 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-04-24 09:10:00 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\event_organizer\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\event_organizer\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\event_organizer\system\Common.php(1089): CodeIgniter\View\View->render('v_event', Array, true)
+#3 C:\xampp\htdocs\event_organizer\app\Views\layout\v_content.php(3): view('v_event')
+#4 C:\xampp\htdocs\event_organizer\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\event_organizer\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\event_organizer\system\Common.php(1089): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#7 C:\xampp\htdocs\event_organizer\app\Views\layout\v_wrapper.php(4): view('layout/v_conten...')
+#8 C:\xampp\htdocs\event_organizer\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\event_organizer\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#10 C:\xampp\htdocs\event_organizer\system\Common.php(1089): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#11 C:\xampp\htdocs\event_organizer\app\Controllers\Event.php(26): view('layout/v_wrappe...', Array)
+#12 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Event->index()
+#13 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Event))
+#14 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#16 {main}

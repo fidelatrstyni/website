@@ -1,0 +1,15 @@
+CRITICAL - 2022-01-28 00:15:58 --> Undefined variable: currentAdminMenu
+#0 C:\xampp\htdocs\event_organizer\app\Views\layout\v_sidebar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\event_organizer\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\event_organizer\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\event_organizer\system\Common.php(1089): CodeIgniter\View\View->render('layout/v_sideba...', Array, true)
+#4 C:\xampp\htdocs\event_organizer\app\Views\layout\v_wrapper.php(4): view('layout/v_sideba...')
+#5 C:\xampp\htdocs\event_organizer\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\event_organizer\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\event_organizer\system\Common.php(1089): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#8 C:\xampp\htdocs\event_organizer\app\Controllers\Home.php(22): view('layout/v_wrappe...', Array)
+#9 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#10 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\event_organizer\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\event_organizer\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
